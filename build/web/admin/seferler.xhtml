@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>ADMİN PANELİ - SEFERLER</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="Content/bootstrap-datepicker.css" rel="stylesheet" /><!--Yeni bunu ekleyin-->
+
+    
+    
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Email: </strong>info@5bayt.com
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.xhtml">
+
+                    <img src="assets/img/logo.png" />
+                </a>
+
+            </div>
+
+            <div class="left-div">
+                <div class="user-settings-wrapper">
+                    <ul class="nav">
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" style="font-size: 25px;"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-settings">
+                                <div class="media">
+
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Jhon Deo Alex </h4>
+                                        <h5>Developer  Designer</h5>
+
+                                    </div>
+                                </div>
+                                <hr />
+                                <h5><strong>Personal Bio : </strong></h5>
+                                Anim pariatur cliche reprehen derit.
+                                <hr />
+                                <a href="#" class="btn btn-info btn-sm">Full Profile</a><a href="login.xhtml" class="btn btn-danger btn-sm">Logout</a>
+
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="index.xhtml">Giriş</a></li>
+                            <li><a href="vapurlar.xhtml">Vapurlar</a></li>
+                            <li><a class="menu-top-active" href="seferler.xhtml">Seferler</a></li>
+                            <li><a href="personel.xhtml">Personel</a></li>
+                             <li><a href="bilet.xhtml">Bilet</a></li>
+                            <li><a href="duyurular.xhtml">Duyurular</a></li>
+                          <li><a href="kampanyalar.xhtml">Kampanyalar</a></li>
+						  						                <li><a href="musteriler.xhtml">Müşteriler</a></li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">SEFERLER</h4>
+
+                </div>
+
+            </div>
+    
+            
+          
+            <div class="alert alert-success" role="alert">Aşağıda tüm seferler gösterilmiştir, aktif olan seferler yeşil ile tarihi geçmiş olan seferler kırmızı ile gösterilmiştir.</div>
+           
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ekle">Yeni Sefer Ekle</button>
+           
+                
+
+           <hr/>
+
+            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Tarih</th>
+                                            <th>Kalkış Saati</th>
+                                            <th>Kalkış Noktası</th>
+                                            <th>Varış Noktası</th>
+                                            <th>Vapur</th>
+                                            <th>Kapasite</th>
+                                            <th>Normal Ücret</th>
+                                            <th>İndirimli Ücret</th>
+                                            <th>Durum</th>
+
+                                            <th>Düzenle</th>
+                                            <th>Sil</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                          <td>12/12/2016</td>
+                                           <td>14.00</td>
+                                           <td>Adana</td>
+										   <td>Urfa</td>
+                                           <td>Gavurun Kızı</td>
+                                           <td>100</td>
+                                           <td>20 TL</td>
+                                           <td>15 TL</td>
+                                           <td><a class="btn btn-xs btn-success">Aktif</a></td>
+                                           <td><a href="#"  class="btn btn-xs btn-warning" data-toggle="modal" data-target="#duzenle" >Düzenle</a></td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger" data-toggle="modal" data-target="#sil"  >Sil</a> </td>
+                                        </tr>
+
+ <tr>
+                                          <td>12/12/2016</td>
+                                           <td>14.00</td>
+                                           <td>Adana</td>
+										   <td>Urfa</td>
+                                           <td>Gavurun Kızı</td>
+                                           <td>100</td>
+                                           <td>20 TL</td>
+                                           <td>15 TL</td>
+                                           <td><a class="btn btn-xs btn-danger">Pasif</a></td>
+                                           <td><a href="#"  class="btn btn-xs btn-warning" data-toggle="modal" data-target="#duzenle" >Düzenle</a></td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger" data-toggle="modal" data-target="#sil"  >Sil</a> </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                          <td>12/12/2016</td>
+                                           <td>14.00</td>
+                                           <td>Adana</td>
+										   <td>Urfa</td>
+                                           <td>Gavurun Kızı</td>
+                                           <td>100</td>
+                                           <td>20 TL</td>
+                                           <td>15 TL</td>
+                                           <td><a class="btn btn-xs btn-danger">Pasif</a></td>
+                                           <td><a href="#"  class="btn btn-xs btn-warning" data-toggle="modal" data-target="#duzenle" >Düzenle</a></td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger" data-toggle="modal" data-target="#sil"  >Sil</a> </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                          <td>12/12/2016</td>
+                                           <td>14.00</td>
+                                           <td>Adana</td>
+										   <td>Urfa</td>
+                                           <td>Gavurun Kızı</td>
+                                           <td>100</td>
+                                           <td>20 TL</td>
+                                           <td>15 TL</td>
+                                           <td><a class="btn btn-xs btn-success">Aktif</a></td>
+                                           <td><a href="#"  class="btn btn-xs btn-warning" data-toggle="modal" data-target="#duzenle" >Düzenle</a></td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger" data-toggle="modal" data-target="#sil"  >Sil</a> </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                          <td>12/12/2016</td>
+                                           <td>14.00</td>
+                                           <td>Adana</td>
+										   <td>Urfa</td>
+                                           <td>Gavurun Kızı</td>
+                                           <td>100</td>
+                                           <td>20 TL</td>
+                                           <td>15 TL</td>
+                                           <td><a class="btn btn-xs btn-success">Aktif</a></td>
+                                           <td><a href="#"  class="btn btn-xs btn-warning" data-toggle="modal" data-target="#duzenle" >Düzenle</a></td>
+                                             <td> <a href="#"  class="btn btn-xs btn-danger" data-toggle="modal" data-target="#sil"  >Sil</a> </td>
+                                        </tr>
+                                        
+                                  </tbody>
+                                </table>
+                            </div>
+
+        </div>
+ 
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">     <div class="col-md-12">
+          <h4>5bayt.com</h4>
+      </div></div>
+        </div>
+    </footer>
+    
+    
+  
+
+    <!-- AyrımContent-->
+
+
+    <div id="sil" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Silmeyi Onaylıyor Musunuz?</h4>
+      </div>
+      <div style="text-align:center" class="modal-body" data-dismiss="modal">
+<button  type="button" class="btn btn-success">Evet</button>
+<button  type="button" class="btn btn-danger">Hayır</button>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- AyrımContent-->
+
+
+    <div id="ekle" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Yeni Sefer Ekle</h4>
+      </div>
+      <div class="modal-body">
+
+
+<div class="col">
+  <div class="form-group">
+  <label for="usr">Kalkış Noktası:</label>
+  <select name="sel" class="form-control" id="sel2">
+    <option>Adana</option>
+    <option>Urfa</option>
+    <option>Trabzon</option>
+    <option>Konya</option>
+    <option>Çanakkale</option>
+    <option>Ordu</option>
+  </select>
+  </div>
+
+  <div class="form-group">
+  <label for="usr">Varış Noktası:</label>
+  <select name="sel2" class="form-control" id="sel3">
+    <option>Adana</option>
+    <option selected="selected">Urfa</option>
+    <option>Trabzon</option>
+    <option>Konya</option>
+    <option>Çanakkale</option>
+    <option>Ordu</option>
+  </select>
+  </div>
+  
+   <div class="form-group">
+  <label for="usr">Tarih:</label>
+  <div id="sandbox-container">
+        <div class="input-group date">
+            <input type="text" class="form-control"/><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+    </div>
+   </div>
+
+<div class="form-group"><strong>Kalkış Saati:
+    <select name="sel4" class="form-control" id="sel5">
+      <option>00.00</option>
+      <option>01.00</option>
+      <option>02.00</option>
+      <option>03.00</option>
+      <option>04.00</option>
+      <option>05.00</option>
+      <option>06.00</option>
+      <option>07.00</option>
+      <option>08.00</option>
+      <option>09.00</option>
+      <option>10.00</option>
+      <option>11.00</option>
+      <option>12.00</option>
+      <option>13.00</option>
+      <option>14.00</option>
+      <option>15.00</option>
+      <option>16.00</option>
+      <option>17.00</option>
+      <option>18.00</option>
+      <option>19.00</option>
+      <option>20.00</option>
+      <option>21.00</option>
+      <option>22.00</option>
+      <option>23.00</option>
+</select>
+</strong></div>
+  <div class="form-group">
+  <label for="sel1">Vapurlar:</label>
+  <select class="form-control" id="sel1">
+    <option>Behçet Reis</option>
+    <option>Cüneyt Reis</option>
+    <option>Keko Reis</option>
+    <option>Balkçı Hamlet</option>
+    <option>Gavurun Kızı</option>
+    <option>İsmail YK</option>
+  </select>
+</div>
+  <div class="form-group">
+  <label for="usr">Kapasite:</label>
+      <input type="text" class="form-control" id="disabledInput" value="Veritabından Vapuruna Göre Çekilecek"/></div>
+      
+  <div class="form-group">
+  <label for="usr">Normal Ücret:</label>
+  <input type="text" class="form-control" id="usr"/>
+</div>
+
+  <div class="form-group">
+  <label for="usr">İndirimli Ücret:</label>
+  <input type="text" class="form-control" id="usr"/>
+</div>
+
+<div>
+<button type="button" class="btn btn-primary">Sefer Ekle</button>
+</div>
+
+<br/>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    <div id="duzenle" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title">Düzenle</h4>
+      </div>
+      <div class="modal-body">
+
+
+<div class="col">
+  <div class="form-group">
+  <label for="usr">Kalkış Noktası:</label>
+  <select name="sel" class="form-control" id="sel2">
+    <option>Adana</option>
+    <option>Urfa</option>
+    <option>Trabzon</option>
+    <option>Konya</option>
+    <option>Çanakkale</option>
+    <option>Ordu</option>
+  </select>
+  </div>
+
+  <div class="form-group">
+  <label for="usr">Varış Noktası:</label>
+  <select name="sel2" class="form-control" id="sel3">
+    <option>Adana</option>
+    <option selected="selected">Urfa</option>
+    <option>Trabzon</option>
+    <option>Konya</option>
+    <option>Çanakkale</option>
+    <option>Ordu</option>
+  </select>
+  </div>
+  
+   <div class="form-group">
+  <label for="usr">Tarih:</label>
+  <div id="sandbox-container">
+        <div class="input-group date">
+            <input value="12/12/2016" type="text" class="form-control"/><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+        </div>
+    </div>
+   </div>
+
+<div class="form-group"><strong>Kalkış Saati:
+    <select name="sel4" class="form-control" id="sel5">
+      <option>00.00</option>
+      <option>01.00</option>
+      <option>02.00</option>
+      <option>03.00</option>
+      <option>04.00</option>
+      <option>05.00</option>
+      <option>06.00</option>
+      <option>07.00</option>
+      <option>08.00</option>
+      <option>09.00</option>
+      <option>10.00</option>
+      <option>11.00</option>
+      <option>12.00</option>
+      <option>13.00</option>
+      <option>14.00</option>
+      <option>15.00</option>
+      <option>16.00</option>
+      <option>17.00</option>
+      <option>18.00</option>
+      <option>19.00</option>
+      <option>20.00</option>
+      <option>21.00</option>
+      <option>22.00</option>
+      <option>23.00</option>
+</select>
+</strong></div>
+  <div class="form-group">
+  <label for="sel1">Vapurlar:</label>
+  <select class="form-control" id="sel1">
+    <option>Behçet Reis</option>
+    <option>Cüneyt Reis</option>
+    <option>Keko Reis</option>
+    <option>Balkçı Hamlet</option>
+    <option>Gavurun Kızı</option>
+    <option>İsmail YK</option>
+  </select>
+</div>
+  <div class="form-group">
+  <label for="usr">Kapasite:</label>
+      <input type="text" class="form-control" id="disabledInput" value="100"/></div>
+      
+  <div class="form-group">
+  <label for="usr">Normal Ücret[TL]:</label>
+  <input type="text" value="20" class="form-control" id="usr"/>
+</div>
+
+  <div class="form-group">
+  <label for="usr">İndirimli Ücret[TL]:</label>
+  <input type="text" value="15" class="form-control" id="usr"/>
+</div>
+
+<div>
+<button type="button" class="btn btn-primary">Güncelle</button>
+</div>
+
+<br/>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+<script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+<script src="assets/js/bootstrap.js"></script>
+<script src="scripts/bootstrap-datepicker.js"></script><!--Yeni bunu ekleyin-->
+   <script type="text/javascript">
+        $(document).ready(function () {//Zaten tanımlı bir document.ready bloğunuz varsa aşağıdaki kısmı onun içine yazabilirsiniz. (Carousel varsa muhtemelen vardır)
+            $('#sandbox-container .input-group.date').datepicker({
+                format: "dd/mm/yyyy"
+            });
+        });
+    </script>    
+</body>
+</html>
